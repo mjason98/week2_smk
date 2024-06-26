@@ -1,4 +1,4 @@
-# WildFire Detection in SageMacker
+# WildFire Detection in SageMaker
 
 In this project, SageMaker and its services are used to create a pipeline for image processing, training a deep learning model, and subsequently deploying it to predict whether images contain fire, specifically in forest areas or vegetation.
 
@@ -12,14 +12,15 @@ The code presented here was developed for SageMaker, and its proper testing shou
 
 We use open datasets found on the internet:
 
-* a
-* b
-* c
+* [Kaggle Fire Dataset](https://www.kaggle.com/datasets/phylake1337/fire-dataset)
+* [Roboflow Fire Project 1](https://universe.roboflow.com/fire-iak32/fire-project/dataset/4)
+* [Roboflow Fire Project 2](https://universe.roboflow.com/fire-dataset-tp9jt/fire-detection-sejra/)
 
-These datasets can be downloaded for classification tasks. Currently, we manually inject data into the pipeline. Using the S3 service, the data is stored in the S3 bucket `wildfire/download` into the following folders:
+These datasets can be downloaded for classification tasks. Currently, we **manually inject data** into the pipeline. Using the S3 service, the data is stored in the S3 bucket **`wildfire/download`** into the following folders:
 
 * `wildfire/download/fire_image`: This folder contains images classified with fire.
 * `wildfire/download/no_fire_image`: This folder contains images classified with no fire.
 
-This copying process is done manually through the AWS UI or using the terminal, as this will be all the data to be used for training the models.
+This copying process is done **manually through the AWS UI or using the terminal**, as this will be all the data to be used for training the models.
 
+## Pipeline
