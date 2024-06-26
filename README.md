@@ -27,4 +27,5 @@ This copying process is done **manually through the AWS UI or using the terminal
 
 Each `Job #` folder is a step in the pipeline. Each one has a jupuyter noteboook that calls a job inside sagemakcer to perform the task descirbed in the folder name:
 
-* *Job 1 preprocess*: Data is taken from the s2 bucket, trasfromed in size and format and moved to the `raw_data` folder.
+* *Job 1 preprocess*: Data is taken from the s2 bucket, trasfromed in size and format and ingest it to the feature store (FS)
+* *Job 2 training*: A Resnet is trained uisng the data from the FS in a training job.
