@@ -24,3 +24,7 @@ These datasets can be downloaded for classification tasks. Currently, we **manua
 This copying process is done **manually through the AWS UI or using the terminal**, as this will be all the data to be used for training the models.
 
 ## Pipeline
+
+Each `Job #` folder is a step in the pipeline. Each one has a jupuyter noteboook that calls a job inside sagemakcer to perform the task descirbed in the folder name:
+
+* *Job 1 preprocess*: Data is taken from the s2 bucket, trasfromed in size and format and moved to the `raw_data` folder.
